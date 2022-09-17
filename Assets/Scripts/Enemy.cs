@@ -6,6 +6,6 @@ public class Enemy : MonoBehaviour
 {
     void Update()
     {
-        transform.Rotate(new Vector3(15, 0, 0) * 10 * Time.deltaTime);
+        transform.Rotate(new Vector3(15, 0, 0) * Time.deltaTime);
     }
 }
