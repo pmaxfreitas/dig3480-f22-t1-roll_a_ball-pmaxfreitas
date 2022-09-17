@@ -37,13 +37,13 @@ public class PlayerController : MonoBehaviour
     {
         countText.text = "Count: " + count.ToString();
 
-        if(count >= 12)
+        if(count >= 20)
         {
             winTextObject.SetActive(true);
         }
         if (count == 12)
         {
-            transform.position = new Vector3(50.0f, 0.5f, 0.0f);
+            transform.position = new Vector3(45.0f, 0.5f, 0.0f);
         }
     }
 
