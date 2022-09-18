@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             winText.text = "You lose!!!";
             winTextObject.SetActive(true);
+            speed = 0;
         }
     }
 
