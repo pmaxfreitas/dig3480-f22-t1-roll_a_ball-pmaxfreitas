@@ -45,7 +45,6 @@ public class PlayerController : MonoBehaviour
         if(count >= 20)
         {
             winTextObject.SetActive(true);
-            Destroy(this);
         }
         if (count == 12)
         {
