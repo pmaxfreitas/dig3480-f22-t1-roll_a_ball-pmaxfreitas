@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         }
         if (lives <= 0)
         {
-            winText.text = "You lose!!!";
+            winText.text = "GameOver!";
             winTextObject.SetActive(true);
             speed = 0;
         }
