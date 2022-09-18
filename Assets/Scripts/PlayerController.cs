@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
+        lives = 3;
 
         SetCountText();
 
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
+        livesText.text = "Lives: " + lives.ToString();
 
         if(count >= 20)
         {
@@ -68,7 +70,7 @@ public class PlayerController : MonoBehaviour
         else if(other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
-            count--;
+            lives--;
 
             SetCountText();
         }
