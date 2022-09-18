@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
             winText.text = "GameOver!";
             winTextObject.SetActive(true);
             speed = 0;
+            GameObject.Find("Player").GetComponent<Renderer>().material.color = new Color(0, 204, 102);
         }
     }
 
