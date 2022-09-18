@@ -49,6 +49,10 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(45.0f, 0.5f, 0.0f);
         }
+        if (lives =< 0)
+        {
+            
+        }
     }
 
     void FixedUpdate()
