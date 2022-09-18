@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     public TextMeshProUGUI countText;
     public TextMeshProUGUI livesText;
+    public TextMeshProUGUI winText;
     public GameObject winTextObject;
 
     private Rigidbody rb;
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
         if (lives <= 0)
         {
-            winTextObject.text = "You lose!!!";
+            winText.text = "You lose!!!";
             winTextObject.SetActive(true);
         }
     }
