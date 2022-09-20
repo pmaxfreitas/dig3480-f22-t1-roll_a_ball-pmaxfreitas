@@ -8,7 +8,7 @@ public class resetButton : MonoBehaviour
 {
     public Button reset;
 
-    private void Reset()
+    public void Reset()
     {
         SceneManager.LoadScene("MiniGame");
     }
