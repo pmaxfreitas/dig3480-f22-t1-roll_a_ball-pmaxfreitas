@@ -55,6 +55,8 @@ public class PlayerController : MonoBehaviour
             winTextObject.SetActive(true);
             GameObject.Find("Player").GetComponent<Renderer>().material.color = new Color(0.05f, 0.38f, 0.43f);
             Destroy(this);
+
+            GameObject.FindGameObjectsWithTag("PickUp").SetActive(true);
         }
     }
 
