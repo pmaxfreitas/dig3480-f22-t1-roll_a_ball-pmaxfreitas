@@ -52,8 +52,9 @@ public class PlayerController : MonoBehaviour
         }
         if (lives <= 0)
         {
-            GameObject.Find("WinText").GetComponent<TextMeshPro>().text = "You lose!";
             winTextObject.SetActive(true);
+            GameObject.Find("WinText").GetComponent<TextMeshPro>().text = "You lose!";
+            
             speed = 0;
             GameObject.Find("Player").GetComponent<Renderer>().material.color = new Color(0.05f, 0.38f, 0.43f);
             Destroy(this);
