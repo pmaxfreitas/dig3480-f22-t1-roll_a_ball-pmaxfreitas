@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
         lives = 3;
 
         SetCountText();
-
+        resetButton.SetActive(false);
         winTextObject.SetActive(false);
     }
 
