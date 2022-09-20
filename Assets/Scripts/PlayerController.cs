@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             winTextObject.GetComponent<TextMeshProUGUI>().text = "GameOver!";
             winTextObject.SetActive(true);
+            resetButton.SetActive(true);
             GameObject.Find("Player").GetComponent<Renderer>().material.color = new Color(0.05f, 0.38f, 0.43f);
             Destroy(this);
         }
