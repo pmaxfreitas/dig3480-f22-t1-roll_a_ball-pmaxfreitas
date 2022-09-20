@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class resetButton : MonoBehaviour
 {
+    public Button resetButton;
+
     private void Reset()
     {
         SceneManager.LoadScene("MiniGame");
