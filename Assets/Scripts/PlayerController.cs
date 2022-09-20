@@ -24,9 +24,10 @@ public class PlayerController : MonoBehaviour
         count = 0;
         lives = 3;
 
-        SetCountText();
         resetButton.SetActive(false);
         winTextObject.SetActive(false);
+
+        SetCountText();
     }
 
     void OnMove(InputValue movementValue)
