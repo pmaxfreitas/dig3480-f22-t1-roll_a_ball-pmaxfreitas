@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
         if(count >= 20)
         {
             winTextObject.SetActive(true);
+            resetButton.SetActive(true);
         }
         if (count == 12)
         {
